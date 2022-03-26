@@ -1,136 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-    <head>
-        <title>Mohamed Adel's Official Website</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Redressed&family=Roboto+Serif&family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
-          <style>
-              ul{font-family: 'Roboto Serif', sans-serif; font-size: 30px; list-style-type: none;}
-              h1{font-family: 'Redressed', cursive; font-size: 70px;}
-              h2{font-family: 'Comfortaa', cursive; font-size: 50px;}
-              h3{font-family: 'monospace'; font-size: 30px;}
-              p{font-family: 'ZCOOL QingKe HuangYou', cursive; font-size: 40px;}
-              body{background: url("https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png")}
-              body{margin: 10px 5px 6px;}
-              #item {width: 250px;}
-                .red-border{
-                    border-color: rgb(228, 64, 64);
-                    border-width: 10px;
-                    border-style: solid;
-                    border-radius: 20px;
-                    margin: 20px;
-                    max-width: 100%;
-                    max-height: 100%;
-                }
-                .image-border{
-                    border-color: rgb(81, 81, 233);
-                    border-width: 20px;
-                    border-style: solid;
-                    border-radius: 50%;
-                }
-                .socials{
-                    margin: 5px;
-                }
-                .back {
-    position: fixed;
-    padding: 0;
-    margin: 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: white;
-    animation-name: backdiv;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Mohamed Adel</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Mohamed</a>
+        <nav class="navigation">
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact me</a>
+        </nav>
+    </header>
 
-  }
+    <section class="main">
+        <div>
+            <h2>Hello, I'm Mohamed<br><span>Web Developer</span></h2>
+            <h3>I build your dream websites</h3>
+            <a href="#projects" class="main-btn">View my work</a>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+        </div>
+    </section>
 
-  .heart {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 90px;
-    left: 0;
-    background-color: rgb(255, 78, 107);
-    height: 50px;
-    width: 50px;
-    transform: rotate(-45deg);
-    animation-name: beat;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-
-  }
-  .heart:after {
-    background-color: rgb(255, 78, 107);
-    content: "";
-    border-radius: 50%;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    top: 0px;
-    left: 25px;
-  }
-  .heart:before {
-    background-color: rgb(255, 78, 107);
-    content: "";
-    border-radius: 50%;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    top: -25px;
-    left: 0px;
-  }
-
-  @keyframes backdiv {
-    50% {
-      background: #ffe6f2;
-    }
-  }
-
-  @keyframes beat {
-    0% {
-      transform: scale(1) rotate(-45deg);
-    }
-    50% {
-      transform: scale(0.6) rotate(-45deg);
-    }
-  }
-          </style>
-    </head>
-    <body>
-        <h1 style="text-align: center;">Welcome To My Website</h1>
-        <h2 style="text-align: center;">(Still under development)</h2>
-        <h2 style="text-align:left">Hello there.<br> My name is Mohamed Adel, A Full-Stack Web developer. &#128516</h2>
-        <p  style="text-align: center;">
-        <img class="image-border" src="my-photo.jpg" alt="My photo">
-        </p>
-        <p>My background:</p>
-        <p style="text-align: center;">I'm currently a computer science student at the Egyptian E-Learning University, And I have been worked on several projects before.</p>
-        <ul style ="text-align: center;">
-            <p><u>My skills</u></p>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>WordPress</li>
-            <li>JavaScript</li>
-            <li>Node.js</li>
-        </ul>
-        <p>My cerificates:</p>
-            <p style="text-align: center;">
-        <img class="red-border" src="c1.PNG" alt="my certificate" align="middle">
-        <img class="red-border" src="c2.jpeg" alt="my certificate" align="middle">
-        <img class="red-border" src="c3.jpeg" alt="my certificate" align="middle">
-            </p>
-        <h3 style="text-align:center;">My social media accounts</h3>
-        <p style="text-align: center;">
-            <a class="socials" href="https://www.facebook.com/profile.php?id=100004255364863" target="_blank"><img src="fb-logo.png" alt="my facebook" width="70px"></a>
-            <a class="socials" href="https://www.instagram.com/mohamedadel14905" target="_blank"><img src="Instagram_logo.png" alt="my instagram" width="70px"></a>
-            <a class="socials" href="https://www.twitter.com" target="_blank"><img src="Twitter_logo.png" alt="my twitter" width="70px"></a>
-        </p>
-        <div class="heart"></div>
-        
-
-    </body>
+    <section class="#cards" id="services">
+        <h2 class="title">Services</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="info">
+                    <h3>Web Development</h3>
+                    <p>Make and develop the website you desire using HTML, CSS, JavaScript, React JS and managing your website using WordPress</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-video"></i>
+                </div>
+                <div class="info">
+                    <h3>Video Editing</h3>
+                    <p>Make the best of the video that you desire using the high-demanded software "Adobe Premiere"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
